@@ -74,9 +74,9 @@ def multi_part_upload(bucket_name, item_name, file_path):
     except Exception as e:
         print("Unable to complete multi-part upload: {0}".format(e))
 
-t=input('Enter t:')
-g=input('Enter g:')
-f=input('Enter f:')
+t=input('Enter temperature(in C):')
+g=input('Enter gas value(in ppm):')
+f=input('Enter flame value(1 for ON,0 for OFF):')
 
 if int(t)>45 or int(g)>300:
     print("Fan on")
